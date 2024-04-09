@@ -55,7 +55,7 @@ bool isCharInWord(const char ch, const string& word)
     // TODO: return true if ch is in word else return false
 
     for(char c : work)
-        if c==ch return true;
+        if( c==ch) return true;
     return false;
 }
 
@@ -86,7 +86,7 @@ string generateHiddenCharacters(string answerWord){
     // TODO: Based on answerWord's length, generate hidden characters in form of "---"
     string secretWord="";
 
-    for(int i=0;i<answerWord.size();i++) secretWord+="-";
+    for(int i=0;i<answerWord.size();i++) secretWord+='-';
     return secretWord;
 }
 
