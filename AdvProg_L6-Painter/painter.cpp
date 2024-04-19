@@ -24,7 +24,7 @@ void Painter::jumpForward(int numPixel)
     // TODO: jump the painter forward'
     float res=(angle /180) * M_PI;
     x=x+cos(res)*numPixel;
-    y=y+sin(res) * numPixel;
+    y=y-sin(res) * numPixel;
 }
 
 
@@ -38,7 +38,7 @@ void Painter::jumpBackward(int numPixel)
 {
     // TODO: jump the painter backward
         float res=(angle /180) * M_PI;
-    x=x+cos(res)*numPixel;
+    x=x-cos(res)*numPixel;
     y=y+sin(res) * numPixel;
 }
 
